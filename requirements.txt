@@ -2,4 +2,4 @@ flask
 google-generativeai
 python-dotenv
 firebase-admin
-goole-genai
+google-genai
