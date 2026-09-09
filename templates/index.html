@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthMate - Food & Nutrition</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🥗 HealthMate</h1>
+        <p>Your Food & Nutrition Assistant</p>
+    </div>
+
+    <div class="chat-container">
+
+        <div id="chat-box">
+            <div class="message bot">
+                Hi! 👋 I'm HealthMate.<br>
+                Ask me anything about food and nutrition.
+            </div>
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask about food or nutrition..."
+                onkeydown="handleKey(event)"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
